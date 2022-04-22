@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompecabezas</title>
+    <style>
+        body{
+        width: 800px;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+    }
+    #miCanvas{
+        border: dotted 2px yellow;
+        background: green;
+    }
+    </style>
+    <script>
+        /************************
+         * VARIABLES
+         * ********************/
+        var imagen;
+        var ancho = 150;
+        var margen = 0;
+        var inicioX = 100;
+        var inicioY = 25;
+        var x = 0;
+        var y = 0;
+        var renglones = 3;
+        var columnas = 4;
+        var fichas_array = new Array();
+        var numFichas = renglones * columnas;
+        var barajaBandera = false;
+
+        /***********************
+         * OBJETOS
+         * *********************/
+        function Ficha(ii, x, y, w, xx, yy, i, j, bandera){
+            this.i = ii;
+            this.x = x;
+            this.y = y;
+            this.w = w;
+            this.xx = xx;
+            this.yy = yy;
+            this.ren = i;
+            this.col = j;
+            this.bandera = bandera;
+            this.dibuja = dibujaBandera;
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
